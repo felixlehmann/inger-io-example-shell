@@ -1,7 +1,12 @@
 #!/bin/bash
 #set -x #echo on
 
-# Example call: ./curl.sh v1 google adwords v201710 published
+# Author
+#     Felix Lehmann
+# Examples
+#     ./curl.sh
+#     ./curl.sh v1 google adwords v201710 published
+
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] || [ -z "$4" ] || [ -z "$5" ]; then
     inger_version="v1"
     vendor="facebook"
