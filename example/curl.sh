@@ -21,7 +21,7 @@ else
     method=$5
 fi
 
-api_url="http://inger.io/$inger_version/$vendor/$service/$version/$method"
+api_url="https://inger.io/$inger_version/$vendor/$service/$version/$method"
 if [ -x "$(command -v jq)" ]; then
     deprecation_date=source curl -s $api_url --header 'content-type: application/json' | jq
 else
